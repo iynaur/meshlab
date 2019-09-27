@@ -37,6 +37,8 @@ linux:QMAKE_RPATHDIR += ../distrib
 #	win32-g++:release:LIBS += -L../common/release -lcommon
 #}
 
+LIBS += -L/opt/Qt5.13.1/5.13.1/gcc_64/lib -lQt5Qml
+
 win32-msvc:DEFINES += GLEW_STATIC
 win32-msvc2005:DEFINES += GLEW_STATIC
 win32-msvc2008:DEFINES += GLEW_STATIC

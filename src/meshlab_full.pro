@@ -1,6 +1,9 @@
 #config += debug_and_release
 TEMPLATE      = subdirs
 CONFIG += ordered
+
+LIBS += -L/opt/Qt5.13.1/5.13.1/gcc_64/lib -lQt5Qml
+
 SUBDIRS       = common \
                 meshlab \
                 meshlabserver \

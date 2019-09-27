@@ -111,6 +111,7 @@ QT += xml
 QT += xmlpatterns
 QT += network
 QT += script
+QT += qml quick
 
 
 # the following line is needed to avoid mismatch between
@@ -156,6 +157,8 @@ win32-g++:LIBS        	+= -L../external/lib/win32-gcc -ljhead -L../distrib -lcom
 
 linux:LIBS += -L$$PWD/../external/lib/linux -ljhead -L../distrib -lcommon -lGLU
 linux:QMAKE_RPATHDIR += ../distrib
+
+LIBS += -L/opt/Qt5.13.1/5.13.1/gcc_64/lib -lQt5Qml
 
 # uncomment in your local copy only in emergency cases.
 # We should never be too permissive
